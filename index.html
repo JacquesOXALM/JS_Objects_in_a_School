@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <script src="objects.js"></script>
+    <script src="action.js"></script>
+    <script src="data.js"></script>
+    <link rel = "stylesheet" href = " https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <body onload="initial(1)">
+    </body>
+    <style>
+        body{
+            background-color: #ffa762;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Bobby Shmurda is free in 2021</title>
+
+</head>
+<body>
+<div id="title">Student Registrar System</div>
+
+<table id= "table1" style="width:99%" border="5">
+    <tr id="label">
+        <td>Add Stuff!</td>
+    </tr>
+    <tr id="StudentRow">
+        <td>Add Student!</td>
+        <td> <input type="text" id="StudentFirstName" placeholder="First Name"> </td>
+        <td> <input type="text" id="StudentLastName" placeholder="Last Name"> </td>
+        <td> <input type="number" id="StudentGrade" value="12"> </td>
+        <td> Add Student! <i id="addStudent" class="fa fa-plus" onclick="addStudent()">  </i> </td>
+    </tr>
+    <tr id="TeacherRow">
+        <td>Add Teacher!</td>
+        <td> <input type="text" id="TeacherFirstName" placeholder="First Name"> </td>
+        <td> <input type="text" id="TeacherLastName" placeholder="Last Name"> </td>
+        <td> <select id="TeacherSubject" placeholder="Section"  ></select> </td>
+        <td> Add Teacher! <i id="addTeacher" class="fa fa-plus" onclick="addTeacher()"></i> </td>
+    </tr>
+    <tr id="SectionRow">
+        <td>Add Section/Class!</td>
+        <td><input type="text" id="SectionName" placeholder="Class"></td>
+        <td><input type="number" placeholder="Class Size" id="SectionCount" ></td>
+        <td></td>
+        <td> Add Section! <i id="addSection" class="fa fa-plus" onclick="addSection()"></i> </td>
+    </tr>
+    <tr id="blankSpacer"></tr>
+    <tr id="listButtons">
+        <td> List Stuff!</td>
+        <td> List Students <i id="listStud" class="fa fa-address-book" onclick="listStudent()"></i></td>
+        <td> List Teachers <i id="listTeach" class="fa fa-address-book" onclick="listTeacher()"></i></td>
+        <td> List Sections <i id="listSection" class="fa fa-address-book" onclick="listSection()"></i></td>
+        <td></td>
+    </tr>
+</table>
+<table id="table2" style="width: 30%" border="5">
+    <tr id="label2">
+        <td>Add and Remove Stuff To and From Other Stuff</td>
+    </tr>
+    <tr id="addStu">
+        <td> Add <select id="stuAdded" ></select> to <select id="sectGive"></select>
+             <i id="addSToS" class="fa fa-plus-square" onclick="addStudentToSection(document.getElementById('stuAdded').value, document.getElementById('sectGive').value)"></i> </td>
+    </tr>
+    <tr id="removeStu">
+        <td> Remove <select id="stuRemoved" ></select> from <select id="sectTake"></select>
+             <i id="takeSFromS" class="fa fa-minus-square" onclick="removeStudentFromSection()"></i></td>
+    </tr>
+
+</table>
+<table id="table3" style="width: 35.5%" border="5">
+    <tr id="label3">
+        <td> Search for Stuff: Who's in What? </td>
+    </tr>
+    <tr>
+        <td> What class does Mr./Ms. <select id="search4Teach"></select> teach? <i id="search4T" onclick="searchForTeacher()" class="fa fa-search"></i></td>
+    </tr>
+    <tr>
+        <td> What students currently take <select id="search4Sect"></select> class? <i id="search4Section" onclick="searchForSections()" class="fa fa-search"></i></td>
+
+    </tr>
+</table>
+
+
+<div id="okiedokie"></div>
+<div id = "newStu"></div>
+<div id="list"></div>
+</body>
+</html>

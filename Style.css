@@ -1,0 +1,74 @@
+#table1{
+    border-color: #cabfc0;
+    position: absolute;
+    top: 9%;
+    margin-left: 0;
+}
+
+#table2{
+    border-color: #cabfc0;
+    position: absolute;
+    top: 36%;
+    margin-left: 0;
+}
+
+#table3{
+    font-size: 150%;
+    border-color: #cabfc0;
+    position: absolute;
+    top: 36%;
+    margin-left: 63.5%;
+}
+
+#title{
+    position: absolute;
+    margin-left: 32%;
+    font-size: 250%;
+}
+
+#label2{
+    font-size: 250%;
+}
+
+#label{
+    font-size: 250%;
+}
+
+#label3{
+    font-size: 200%;
+}
+
+#addStu{
+    font-size: 150%;
+}
+
+#removeStu{
+    font-size: 150%;
+}
+
+#newStu{
+    font-size: 150%;
+    position: absolute;
+    top: 45%;
+    margin-left: 45%;
+}
+
+#list{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 150%;
+    color: #ffa762;
+    background-color: #ffffff;
+    position: absolute;
+    top: 45%;
+    margin-left: 40%;
+    border: double ;
+}
+
+#okiedokie{
+    background-color: #ffa762;
+    position: absolute;
+    top: 40%;
+    margin-left: 33%;
+}
+
