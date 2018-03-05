@@ -93,20 +93,21 @@ function addStudentToSection(student,section){
 function removeStudentFromSection() {
     hideAllDivs();
     //make the parameters not undefined
-    var Student = document.getElementById("stuRemoved").selectedIndex;
-    //var Student = allStudents[Stud];
-    var section = document.getElementById("sectTake").selectedIndex;
-    //var section = allSections[sect];
+    var Student = document.getElementById("stuRemoved").value;
+
+    var section = document.getElementById("sectTake").value;
+
     //section.removeStudent(Student);
      //for (var i = 0; i < allStudents.length; i++) {
-         //if (allStudents[i].firstName == Student) {
-            // Student = allStudents[i];
-         //}
-
+        //if (allStudents[i].firstName == Student) {
+         //    Student = allStudents[i];
+       //  }
+        var selectedStu =[];
      for (var j = 0; j < allSections.length; j++) {
          if (allSections[j].name == section) {
-             allSections[j].removeStudent(Student);
+             selectedStu.push(allSections[j]);
          }
+         selectedStu[0].removeStudent(Student);
      }
      //}
     document.getElementById("okiedokie").innerHTML = "<img src='img/image2.png' width='400' height='250'/>";
